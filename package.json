@@ -1,5 +1,5 @@
 {
-  "name": "Ironclad Gulp Starterkit",
+  "name": "css-only",
   "version": "1.0.0",
   "description": "Starter kit for whipping up SCSS & Vanilla JS playground projects. Combine a framework of your choice with the existing architecture to create a full project.",
   "main": "index.js",
