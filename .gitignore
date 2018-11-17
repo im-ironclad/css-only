@@ -1,0 +1,9 @@
+# System Files
+.DS_Store
+
+# NPM
+node_modules/
+
+# Built files (keep clean)
+public/scripts
+public/styles
