@@ -1,0 +1,64 @@
+& .shield {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  overflow: hidden;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+
+  & .highlight,
+  & .center {
+    @include centerAbsolute();
+    z-index: 3;
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+  }
+
+  & .highlight {
+    transform: translate(-50%, -50%)
+      rotateZ(45deg);
+    border-top: 5px solid transparent;
+    border-left: 5px solid $color-white;
+    border-bottom: 5px solid transparent;
+  }
+
+  & .center {
+    width: 55%;
+    height: 55%;
+    background-color: $color-steel-darker;
+
+    &:after {
+      @include centerAbsolute();
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $color-white;
+    }
+  }
+
+  & .base,
+  & .base-shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & .base {
+    top: 38%;
+    left: 43%;
+    z-index: 2;
+    background-color: $color-shadow-lighter;
+  }
+
+  & .base-shadow {
+    z-index: 1;
+    background-color: $color-shadow-darker;
+  }
+}

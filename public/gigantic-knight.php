@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Only Playground</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>  
+  <main class="main">
+    <section class="gigantic-knight">
+      <h1 class="gigantic-knight__heading">
+        Gigantic Knight:
+      </h1>
+
+      <div class="artboard">
+        <div class="knight">
+          <div class="helmet">
+            <div class="eyes">
+              <div class="eyeball"></div>
+              <div class="eyeball"></div>
+              <div class="nosehole">
+                <div class="corner left"></div>
+                <div class="corner right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="shield">
+            <div class="highlight"></div>
+            <div class="center"></div>
+            <div class="base"></div>
+            <div class="base-shadow"></div>
+          </div>
+        </div>
+        <div class="floor">
+          <div class="triangle"></div>
+          <div class="castle">
+            <div class="base"></div>
+            <div class="base-top"></div>
+            <div class="teeth">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="grave grave-1">
+            <div class="circle"></div>
+            <div class="cross">
+              <div class="horizontal"></div>
+              <div class="vertical"></div>
+            </div>
+          </div>
+          <div class="grave grave-2">
+            <div class="circle"></div>
+            <div class="cross">
+              <div class="horizontal"></div>
+              <div class="vertical"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sky">
+          <div class="accent accent-cloud-tip"></div>
+          <div class="accent accent-tube"></div>
+          <div class="accent accent-square"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>

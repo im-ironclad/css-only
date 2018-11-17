@@ -1,0 +1,19 @@
+// Set up variables
+$artboardWidth: 800px;
+$artboardHeight: 600px;
+$color-white: #fff;
+$color-black: #000;
+$color-purple: #7464AB;
+$color-grey-lighter: #CBC9E6;
+$color-grey-darker: #AAB2D9;
+$color-steel-lighter: #364D5B;
+$color-steel-darker: #0E3441;
+$color-shadow-lighter: #CDDEE6;
+$color-shadow-darker: #AEC9D5;
+
+@mixin centerAbsolute() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,8 +1,0 @@
-$className: 'intro';
-
-.#{$className} {
-
-  &__heading {
-    @include font('heading');
-  }
-}
