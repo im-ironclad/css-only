@@ -1,0 +1,44 @@
+.body {
+  position: absolute;
+  bottom: 30px;
+  left: 42%;
+  width: 60px;
+  height: 40px;
+  background-color: $color-black;
+  border-bottom-left-radius: 15px;
+
+  & .arm {
+    position: absolute;
+    top: -10%;
+    left: -26px;
+    z-index: -1;
+    width: 25px;
+    height: 30px;
+    background-color: $color-black;
+    transform: rotate(40deg);
+  }
+
+  & .leg {
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    width: 22px;
+    height: 20px;
+    background-color: $color-black;
+
+    &:nth-child(2) {
+      left: 60px;
+    }
+  }
+
+  & .shadow {
+    position: absolute;
+    top: 130%;
+    left: -10px;
+    z-index: -1;
+    width: 100px;
+    height: 10px;
+    border-radius: 15px;
+    background-color: darken($color-purple, 15%);
+  }
+}

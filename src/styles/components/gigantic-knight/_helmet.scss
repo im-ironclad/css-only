@@ -1,0 +1,102 @@
+& .helmet {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 155px;
+  background-color: $color-steel-darker;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background-color: $color-steel-lighter;
+    border-radius: inherit;
+  }
+
+  & > .highlight {
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50% / 70% 70%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $color-shadow-lighter;
+    transform: rotate(45deg);
+  }
+
+  & .eyes {
+    @include centerAbsolute();
+    top: 55%;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 32px;
+    width: 65%;
+    border-radius: 20px;
+    background-color: $color-black;
+
+    & .eyeball {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $color-white;
+      transform: translateX(-2px);
+    }
+
+    & .nosehole {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+      height: 54px;
+      background-color: $color-black;
+
+      & .corner {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: $color-black;
+
+        &.left:after,
+        &.right:after {
+          @include centerAbsolute();
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: $color-steel-lighter;
+        }
+
+        &.left {
+          top: 0;
+          left: -12px;
+
+          &:after {
+            border-top-right-radius: 10px;
+          }
+        }
+
+        &.right {
+          top: 0;
+          right: -12px;
+
+          &:after {
+            border-top-left-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
