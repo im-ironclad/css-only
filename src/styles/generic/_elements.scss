@@ -9,9 +9,10 @@ body {
   position: relative;
   overflow-x: hidden;
   min-width: $min-page-width;
+  min-height: 100vh;
   margin: 0 auto;
   color: $color-black;
-  background-color: $color-white;
+  background-color: $color-offwhite;
   font-family: $font-family-primary;
   -webkit-font-smoothing: antialiased;
   &.is-locked {
