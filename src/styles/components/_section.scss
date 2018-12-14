@@ -1,0 +1,23 @@
+section {
+  width: 100%;
+  height: 100vh;
+
+  .section__heading {
+    @include font("heading");
+    width: 75%;
+    text-align: center;
+    margin-top: $spacing-xl;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .section__artboard {
+    position: relative;
+    width: $artboardWidth;
+    height: $artboardHeight;
+    margin-top: $spacing-lg;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $color-grey-darker;
+  }
+}
